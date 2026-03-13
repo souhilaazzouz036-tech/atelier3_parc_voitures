@@ -13,13 +13,13 @@ class parc:
             return
         self.listevoitures.append(voiture)
         print("voiture ajoutee avec succes")
-    def (self,voiture):
+    def  sortir_une_voiture   (self,voiture):
         if voiture not in self.listevoitures:
             print("la voiture non  presente")
             return
         self.listevoitures.remove(voiture)
         print("voiture retiree avec succes")
-        print ("place libre")
+        print ("place libre",self.calculer_NBrplaces_Libres())
 
     def calculer_NBrplaces_Libres(self):
         return self.capacite-len(self.listevoitures)
