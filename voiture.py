@@ -4,4 +4,7 @@ class Voiture:
         self.marque = marque
         self.couleur = couleur
 
-
+    def afficher_information (self):
+        print(self.matricule)
+        print(self.marque)
+        print(self.couleur)
