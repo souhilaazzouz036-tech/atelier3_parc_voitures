@@ -15,3 +15,10 @@ class parc:
         self.listevoitures.append(voiture)
         print("voiture ajoutee avec succes")
 
+    def sortir_une_voiture(self, voiture):
+        if voiture not in self.listevoitures:
+            print("la voiture non presente")
+            return
+        self.listevoitures.remove(voiture)
+        print("voiture retiree avec succes")
+
